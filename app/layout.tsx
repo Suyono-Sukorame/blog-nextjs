@@ -16,15 +16,31 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-gray-50 text-gray-900">
         <header className="bg-white shadow-md">
-          <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div className="text-lg font-bold">
+          <nav className="container mx-auto px-8 py-5 flex justify-between items-center">
+            <div className="text-xl font-bold">
               <Link href="/">MyBlog</Link>
             </div>
-            <ul className="flex space-x-6">
-              <li><Link href="/" className="hover:text-blue-600" prefetch={false}>Home</Link></li>
-              <li><Link href="/blog" className="hover:text-blue-600" prefetch={false}>Blog</Link></li>
-              <li><Link href="/about" className="hover:text-blue-600" prefetch={false}>About</Link></li>
-              <li><Link href="/contact" className="hover:text-blue-600" prefetch={false}>Contact</Link></li>
+            <ul className="flex space-x-8">
+              <li>
+                <Link href="/" className="hover:text-blue-600" prefetch={false}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="hover:text-blue-600" prefetch={false}>
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="hover:text-blue-600" prefetch={false}>
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-blue-600" prefetch={false}>
+                  Contact
+                </Link>
+              </li>
             </ul>
           </nav>
         </header>
